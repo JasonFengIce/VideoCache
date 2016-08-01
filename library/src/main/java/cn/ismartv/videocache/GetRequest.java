@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static com.danikula.videocache.Preconditions.checkNotNull;
+import static cn.ismartv.videocache.Preconditions.checkNotNull;
 
 /**
  * Model for Http GET request.

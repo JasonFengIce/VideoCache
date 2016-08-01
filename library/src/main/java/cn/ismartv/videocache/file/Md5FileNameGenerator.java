@@ -2,7 +2,7 @@ package cn.ismartv.videocache.file;
 
 import android.text.TextUtils;
 
-import com.danikula.videocache.ProxyCacheUtils;
+import cn.ismartv.videocache.ProxyCacheUtils;
 
 /**
  * Implementation of {@link FileNameGenerator} that uses MD5 of url as file name

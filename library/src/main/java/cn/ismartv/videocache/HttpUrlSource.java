@@ -10,8 +10,8 @@ import java.io.InterruptedIOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import static com.danikula.videocache.ProxyCacheUtils.DEFAULT_BUFFER_SIZE;
-import static com.danikula.videocache.ProxyCacheUtils.LOG_TAG;
+import static cn.ismartv.videocache.ProxyCacheUtils.DEFAULT_BUFFER_SIZE;
+import static cn.ismartv.videocache.ProxyCacheUtils.LOG_TAG;
 import static java.net.HttpURLConnection.HTTP_MOVED_PERM;
 import static java.net.HttpURLConnection.HTTP_MOVED_TEMP;
 import static java.net.HttpURLConnection.HTTP_OK;

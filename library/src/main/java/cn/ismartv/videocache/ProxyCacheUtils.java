@@ -13,8 +13,8 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
-import static com.danikula.videocache.Preconditions.checkArgument;
-import static com.danikula.videocache.Preconditions.checkNotNull;
+import static cn.ismartv.videocache.Preconditions.checkArgument;
+import static cn.ismartv.videocache.Preconditions.checkNotNull;
 
 /**
  * Just simple utils.

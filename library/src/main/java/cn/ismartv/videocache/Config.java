@@ -1,7 +1,7 @@
 package cn.ismartv.videocache;
 
-import com.danikula.videocache.file.DiskUsage;
-import com.danikula.videocache.file.FileNameGenerator;
+import cn.ismartv.videocache.file.DiskUsage;
+import cn.ismartv.videocache.file.FileNameGenerator;
 
 import java.io.File;
 

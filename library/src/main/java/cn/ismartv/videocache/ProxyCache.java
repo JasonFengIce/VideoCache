@@ -4,8 +4,8 @@ import android.util.Log;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static com.danikula.videocache.Preconditions.checkNotNull;
-import static com.danikula.videocache.ProxyCacheUtils.LOG_TAG;
+import static cn.ismartv.videocache.Preconditions.checkNotNull;
+import static cn.ismartv.videocache.ProxyCacheUtils.LOG_TAG;
 
 /**
  * Proxy for {@link Source} with caching support ({@link Cache}).

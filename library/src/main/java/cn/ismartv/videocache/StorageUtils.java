@@ -7,7 +7,7 @@ import android.util.Log;
 import java.io.File;
 
 import static android.os.Environment.MEDIA_MOUNTED;
-import static com.danikula.videocache.ProxyCacheUtils.LOG_TAG;
+import static cn.ismartv.videocache.ProxyCacheUtils.LOG_TAG;
 
 /**
  * Provides application storage paths

@@ -4,11 +4,11 @@ import android.content.Context;
 import android.os.SystemClock;
 import android.util.Log;
 
-import com.danikula.videocache.file.DiskUsage;
-import com.danikula.videocache.file.FileNameGenerator;
-import com.danikula.videocache.file.Md5FileNameGenerator;
-import com.danikula.videocache.file.TotalCountLruDiskUsage;
-import com.danikula.videocache.file.TotalSizeLruDiskUsage;
+import cn.ismartv.videocache.file.DiskUsage;
+import cn.ismartv.videocache.file.FileNameGenerator;
+import cn.ismartv.videocache.file.Md5FileNameGenerator;
+import cn.ismartv.videocache.file.TotalCountLruDiskUsage;
+import cn.ismartv.videocache.file.TotalSizeLruDiskUsage;
 
 import java.io.File;
 import java.io.IOException;
@@ -28,27 +28,26 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeoutException;
 
-import static com.danikula.videocache.Preconditions.checkAllNotNull;
-import static com.danikula.videocache.Preconditions.checkNotNull;
-import static com.danikula.videocache.ProxyCacheUtils.LOG_TAG;
+import static cn.ismartv.videocache.Preconditions.checkAllNotNull;
+import static cn.ismartv.videocache.Preconditions.checkNotNull;
+import static cn.ismartv.videocache.ProxyCacheUtils.LOG_TAG;
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
 
 /**
  * Simple lightweight proxy server with file caching support that handles HTTP requests.
  * Typical usage:
- * <pre><code>
+ * <p>
  * public onCreate(Bundle state) {
- *      super.onCreate(state);
- * <p/>
- *      HttpProxyCacheServer proxy = getProxy();
- *      String proxyUrl = proxy.getProxyUrl(VIDEO_URL);
- *      videoView.setVideoPath(proxyUrl);
+ * super.onCreate(state);
+ * <p>
+ * HttpProxyCacheServer proxy = getProxy();
+ * String proxyUrl = proxy.getProxyUrl(VIDEO_URL);
+ * videoView.setVideoPath(proxyUrl);
  * }
- * <p/>
+ * <p>
  * private HttpProxyCacheServer getProxy() {
  * // should return single instance of HttpProxyCacheServer shared for whole app.
  * }
- * <code/></pre>
  *
  * @author Alexey Danilov (danikula@gmail.com).
  */
@@ -373,11 +372,11 @@ public class HttpProxyCacheServer {
 
         /**
          * Overrides default cache folder to be used for caching files.
-         * <p/>
+         * <p>
          * By default AndroidVideoCache uses
          * '/Android/data/[app_package_name]/cache/video-cache/' if card is mounted and app has appropriate permission
          * or 'video-cache' subdirectory in default application's cache directory otherwise.
-         * <p/>
+         * <p>
          * <b>Note</b> directory must be used <b>only</b> for AndroidVideoCache files.
          *
          * @param file a cache directory, can't be null.
@@ -403,7 +402,7 @@ public class HttpProxyCacheServer {
          * Sets max cache size in bytes.
          * All files that exceeds limit will be deleted using LRU strategy.
          * Default value is 512 Mb.
-         * <p/>
+         * <p>
          * Note this method overrides result of calling {@link #maxCacheFilesCount(int)}
          *
          * @param maxSize max cache size in bytes.
@@ -417,7 +416,7 @@ public class HttpProxyCacheServer {
         /**
          * Sets max cache files count.
          * All files that exceeds limit will be deleted using LRU strategy.
-         * <p/>
+         * <p>
          * Note this method overrides result of calling {@link #maxCacheSize(long)}
          *
          * @param count max cache files count.

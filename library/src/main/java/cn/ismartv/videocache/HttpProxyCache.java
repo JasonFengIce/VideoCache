@@ -2,14 +2,14 @@ package cn.ismartv.videocache;
 
 import android.text.TextUtils;
 
-import com.danikula.videocache.file.FileCache;
+import cn.ismartv.videocache.file.FileCache;
 
 import java.io.BufferedOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.Socket;
 
-import static com.danikula.videocache.ProxyCacheUtils.DEFAULT_BUFFER_SIZE;
+import static cn.ismartv.videocache.ProxyCacheUtils.DEFAULT_BUFFER_SIZE;
 
 /**
  * {@link ProxyCache} that read http url and writes data to {@link Socket}

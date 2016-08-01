@@ -1,7 +1,7 @@
 package cn.ismartv.videocache.file;
 
-import com.danikula.videocache.Cache;
-import com.danikula.videocache.ProxyCacheException;
+import cn.ismartv.videocache.Cache;
+import cn.ismartv.videocache.ProxyCacheException;
 
 import java.io.File;
 import java.io.IOException;
